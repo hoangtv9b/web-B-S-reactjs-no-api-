@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: utm-wedding-kt;
+    src: url(../public/font/UTM\ Wedding\ K&T.ttf);
+}
+/* header */
+.header-top{
+    background-size: 100% 100%;
+    background-image: url(https://batdongsan-02.web4s.vn/uploads/plugin/custom_img/2018-07-19/custom-header-hai-phat-land.png);
+}
+.img-logo{
+    height: 75px;
+    margin: 5px 0px 5px 30px;
+}
+.navbar-menu-header{
+    margin: 0;
+}
+.navbar-menu-header > .nav-item{
+    list-style: none;
+}
+.navbar-menu-header > .nav-item > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 8px 15px;
+}
+.navbar-menu-header .nav-item > a:hover{
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.nav-item{
+    position: relative;
+}
+.navbar-second{
+    position: absolute;
+    visibility: hidden;
+    width: 270px;
+    top: 50px;
+    transition: top 1s;
+    box-shadow: 5px 5px 5px -4px rgba(0,0,0,.75);
+    border-top: 2px solid rgb(132, 248, 0);
+    z-index: 3;
+    transition: transform 0.3s ease;
+}
+.nav-item-hover:hover .navbar-second{
+    visibility: visible;
+    transform: translateY(-20px);
+}
+.navbar-second::before{
+    display: table;
+    content: " ";
+}
+.navbar-second li {
+    list-style: none;
+    float: none;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+.navbar-second li:last-child{
+    border-bottom: none;
+}
+.navbar-second li a{
+    display: block;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: padding-left 0.3s;
+    width: 270px;
+    background: rgba(20,60,86,1);
+}
+.navbar-second li a:hover{
+    background: #b7960b;
+    padding-left: 20px;
+}
+.fist-link-nav{
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.search-input{
+    height: 38px;
+    width: 150px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.search-input:focus{
+    outline: none;
+}
+.search-input::placeholder{
+    font-size: 14px;
+}
+.btn-submit{
+    background-color: #028000;
+    border: 1px solid #028000;
+    color: #fff;
+    height: 38px;
+    border-radius: 0px 5px 5px 0px;
+    width: 40px;
+}
+/* header mobile */
+.header-top-mobile{
+    background-size: 100% 100%;
+    background-image: url(https://batdongsan-02.web4s.vn/uploads/plugin/custom_img/2018-07-19/custom-header-hai-phat-land.png);
+}
+.img-logo-mobile{
+    height: 75px;
+    margin: 10px 0px 10px 10px;
+}
+.fa-bars{
+    font-size: 30px;
+    color: #fff;
+}
+.btn-menu-mobile{
+    cursor: pointer;
+    background: #fa0000;
+    padding: 10px 15px;
+}
+.out-side-click{
+    background: rgba(59, 54, 54, 0.466);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    left: 0;
+}
+.menu-responsive{
+    width: 90%;
+    position: fixed;
+    transition: animation 1s;
+    left: -100%;
+    top: 0;
+    transition: left 0.3s;
+    background: #fff;
+    z-index: 99;
+}
+.title-navbar-wrap{
+    padding: 15px 20px;
+    background: #fa0000;
+}
+.title-navbar-mobile{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 0;
+}
+.fa-xmark{
+    color: #fff;
+    font-size: 25px;
+}
+.navbar-header-mobile li{
+    border-bottom: 1px solid #e1e1e1;
+}
+.link-navbar-mobile{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    padding: 15px 10px;
+    display: block; 
+}
+.link-navbar-mobile:hover{
+    text-decoration: none;
+    color: #000;
+}
+.navbar-header-mobile li:last-child{
+    border-bottom: none;
+}
+.link-navbar-mobile-fistchild{
+    background: #f3efef;
+}
+.btn-close-navbar{
+    cursor: pointer;
+}
+.btn-search{
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+.btn-search > .fa-magnifying-glass{
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff2be;
+}
+
+/* footer */
+.footer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://batdongsan-02.web4s.vn/uploads/plugin/custom_img/2018-07-19/custom-header-hai-phat-land.png);
+}
+.logo-footer-img{
+    width: 50%;
+}
+.note-footer{
+    font-family: utm-wedding-kt;
+    margin-top: 30px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 24px;
+}
+.title-menu-ft{
+    margin-top: 0;
+    color: #ffffff;
+    line-height: 25px;
+    font-size: 20px;
+    border-bottom: 2px solid #e1e1e1;
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-family: UTM-Avo, Arial, Helvetica, sans-serif;
+}
+.title-menu-ft::after{
+    display: block;
+    content: "";
+    background: #028000;
+    width: 100px;
+    height: 2px;
+    bottom: -1.3px;
+    position: absolute;
+}
+.about-desc{
+    color: #fff;
+}
+.address-ft > p{
+    color: #fff;
+}
+.link-post-ft{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.post-ft{
+    position: relative;
+}
+.post-ft::before{
+    position: absolute;
+    content: "";
+    bottom: -13px;
+    width: 100%;
+    background: #fff;
+    height: 1px;
+}
+.link-post-ft:hover{
+    text-decoration: none;
+    color: #d2bd56;
+}
+.fa-chevron-right{
+    font-size: 12px;
+}
+.hotline-ft{
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+}
+.fa-square-phone, .fa-blender-phone{
+    color: #d2bd56;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.text-ft{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #fff;
+}
+.business-hours-ft{
+    margin: 15px 0px 5px 0px;
+    color: #ddd;
+}
+.time-ft{
+    color: #d2bd56;
+    font-size: 15px;
+    font-weight: bold;
+}
+.time-ft-span{
+    color: #fff;
+}
+/* copyright footer */
+.copyright{
+    background: #282a2b;
+    height: 55px;
+}
+.copyright-text{
+    color: #616161;
+    font-size: 12px;
+}
+/* home page */
+/* slider */
+.slide-img{
+    width: 100%;
+    height: 559px;
+}
+.slider-prev, .slider-next{
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 40%;
+    background: rgba(94, 16, 16, 0.829);
+    z-index: 1;
+}
+.fa-angle-left, .fa-angle-right{
+    color: #fff;
+    font-size: 30px;
+}
+.slider-next{
+    right: 10px;
+}
+.slider-prev{
+    left: 10px;
+}
+/*nh-info */
+.NH-title{
+    line-height: 27px;
+    font-weight: 700;
+    color: #333;
+    width: 100%;
+    font-size: 22px;
+    margin: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: UTM-Avo, Arial, Helvetica, sans-serif;
+    
+}
+.NH-title::before{
+    font-family: FontAwesome;
+    content: "\f005";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: 26px;
+    left: 0;
+    margin: auto;
+    bottom: -22px;
+    width: 26px;
+    border-radius: 50%;
+    color: #028000;
+    border: 1px solid #028000;
+    background: #fff;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+}
+.NH-title::after{
+    content: '';
+    height: 6px;
+    max-width: 25%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top: 1px solid #028000;
+    border-bottom: 1px solid #028000;
+    bottom: -11px;
+}
+.style-white{
+    color: #fff;
+}
+.nh-info{
+    font-weight: bold;
+}
+.img-intro{
+    width: 100%;
+}
+.intro-title{
+    color: #028000;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.content-intro{
+    line-height: 23px;
+    margin-bottom: 0;
+    color: #747474;
+    font-size: 16px;
+}
+.content-end{
+    margin-bottom: 20px;
+}
+/* feild */
+.background-feild{
+    min-height: 560px;
+    background-image: url(../public/image/custom-linh-vuc-hoat-dong-background-hai-phat-land.jpg);
+}
+.style-white-title::after{
+    border-color: #fff;
+}
+.style-white-title::before{
+    color: #fff;
+    background: #028000;
+    border-color: #fff;
+}
+.icon-span{
+    font-size: 18px;
+    background: #fff;
+    padding: 14px 4px;
+    border-radius: 50%;
+    color: #028000;
+}
+.fa-icon{
+    position: relative;
+    color: #028000;
+    border: 1px solid #028000;
+    padding: 12px 12px;
+    border-radius: 50%;
+}
+.title-feild{
+    color: #028000;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.text-feild{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+}
+/* product */
+.img-product{
+    height: 254px;
+    width: 100%;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+.img-product-project{
+    height: 100%;
+}
+.product-wrap{
+    position: relative;
+}
+.product-wrap:hover .product-hover{
+    display: block;
+}
+.product-hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    height: 254px;
+    background: rgba(0, 0, 0, 0.466);
+}
+.product-hover-project{
+    height: 94%;
+}
+.product-btn{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px
+}
+.product-btn:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.link-product{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff; 
+}
+.link-product:hover{
+    color: #fff;
+    text-decoration: none;
+}
+/* post home page */
+.post-container{
+    background-image: url(../public/image/custom-background-container-hai-phat-land.jpg);
+}
+.img-review{
+    height: 80px;
+    width: 150px;
+    object-fit: cover;
+}
+.post-info-review{
+    margin-left: 15px;
+}
+.post-title-wrap > a{
+    text-decoration: none;
+}
+.post-block{
+    margin: 0px 0px 20px 0px;
+}
+.post-title-wrap{
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.post-title-review{
+    color: #143c56;
+    font-size: 13px;
+    height: 40px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+.time-post-review{
+    font-style: normal;
+    font-size: 14px;
+}
+/* slider trademark */
+.slide-trademark{
+    position: relative;
+}
+.slide-trademark .img-trademark{
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+}
+.img-trademark-wrap{
+    padding: 10px;
+}
+/* google map */
+.google-map{
+    width: 100%;
+    height: 320px;
+}
+/* responsive */
+@media only screen and (max-width: 1440px) {
+    .header-top-mobile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .menu-responsive{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 724px) {
+    .menu-responsive{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .header-top{
+        display: none;
+    }
+    .search-input{
+        width: 200px;
+    }
+    .slider-prev, .slider-next{
+        top: 30%;
+    }
+    .menu-responsive{
+        width: 80%;
+    }
+    .header-top-mobile{
+        display: block;
+    }
+    .slide-img{
+        height: 100%;
+    }
+}
+/* contact */
+.contact-header{
+    position: relative;
+    background-image: url(../public/image/custom-sl1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 220px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.background-dark{
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    background: rgba(0, 0, 0, 0.466);
+}
+.contact-title, .breadcumb-contact{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.breadcumb-contact{
+    font-size: 23px;
+}
+.title-form-contact{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ddd;
+}
+.input-contact{
+    width: 100%;
+    padding: 4px 10px;
+    border: 1px solid #e1e1e1;
+}
+.input-contact::placeholder{
+    font-size: 14px;
+    color: #afa4a4;
+}
+.textarea-contact{
+    width: 100%;
+    padding: 4px 10px;
+    height: 75px;
+    border: 1px solid #e1e1e1;
+}
+.textarea-contact::placeholder{
+    font-size: 14px;
+    color: #afa4a4;
+}
+.btn-submit-form-contact{
+    padding: 8px 15px;
+    color: #fff;
+    background: #fa0000;
+    border: none;
+}
+/* project */
+.title-navbar-h4{
+    padding: 7px 0px;
+    border-bottom: 2px solid #fa0000;
+}
+.title-navbar{
+    color: #fff;
+    padding: 8px 10px;
+    background: #fa0000;
+    font-size: 15px;
+}
+.navbar-web > .nav-item{
+    list-style: none;
+    border-bottom: 1px solid #dac9c9;
+}
+.navbar-web > .nav-item > .link-navbar-web{
+    display: block;
+    color: #000;
+    border-right: 3px solid #e0d2d2;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.navbar-web > .nav-item > .link-navbar-web:hover{
+    color: #fa0000;
+    border-right: 3px solid #fa0000;
+}
+.top-list-product{
+    background: #dff0f0;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 30px;
+    border: 1px solid #c7e7f1;
+    padding: 0px 20px;
+    height: 45px;
+}
+.trade-mark-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
